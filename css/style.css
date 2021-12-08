@@ -550,8 +550,30 @@ h1, h2, h3 {
     max-width: 100%;
 }
 
-@media screen and (max-width:) {
+@media screen and (max-width: 768px) {
+    p, a {
+        font-size: 16px;
+    }
+
+    .menu .menu__logo {
+        width: 100px;
+    }
+
+    .menu .menu__nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu .menu__nav li .menu__link {
+        color: #54EABD;
+        margin-right: 1rem;
+        font-size: 16px;
+    }
+    .menu .menu__search {
+        display: none;
+    }
     
+
 }
 
 
