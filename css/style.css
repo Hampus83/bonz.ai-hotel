@@ -157,7 +157,7 @@ h1, h2, h3 {
 
 /* MAIN */
 
-.wrapper__index {
+.wrapper {
     max-width: 1000px;
     margin: 0 auto;
     background-color: #797777;
@@ -340,8 +340,13 @@ h1, h2, h3 {
     padding-left: 2rem;
 }
 
+.footer .footer__logo img {
+    max-width: 70%;
+}
+
 .footer .footer__nav {
     padding-top: 5rem;
+    margin-right: 5rem;
 }
 
 .footer .footer__nav .links {
@@ -397,12 +402,157 @@ h1, h2, h3 {
     text-decoration-color: rgb(68, 68, 68);
 }
 
+/* -----BOOKING----- */
 
+.booking__background img {
+    max-width: 100%;
+}
 
+.booking__form {
+    background-color: #c4c4c4;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem 0;
+    position: absolute;
+    bottom: 250px;
+}
 
+.booking__form input, select {
+    outline: none;
+    width: 215px;
+    height: 37px;
+    font-size: 18px;
+}
 
+.booking__form .booking__button {
+    padding: 0.3rem 3rem;
+    display: flex;
+}
 
+.booking__form .booking__button img {
+    padding-left: 1.5rem;
+}
 
+.card {
+    margin-bottom: 5rem;
+    padding: 2rem;
+    padding-bottom: 0;
+    background-color: #c4c4c4;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas:
+    "img img . header header ."
+    "img img . info info info"
+    "img img . features features price"
+    "img-change img-change . . . ."
+    "results results results results results results"
+    ;
+}
+
+.card .card__img {
+    grid-area: img;
+    border-radius: 5px;
+    border: 3px solid #54EABD
+}
+
+.card .card__header {
+    grid-area: header;
+    font-weight: 500;
+    margin: 0;
+}
+
+.card .card__info {
+    grid-area: info;
+    font-size: 16px;
+}
+
+.card .card__features {
+    grid-area: features;
+    list-style-type: circle;
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    font-size: 16px;
+    font-family: 'Maven Pro', sans-serif;
+    letter-spacing: 10%;
+    font-weight: 500;
+    padding-left: 1rem;
+    gap: 1.5rem;
+}
+
+.card .card__features li {
+    list-style-type:disc;
+}
+
+.card .card__price {
+    grid-area: price;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.card .img__scroll {
+    grid-area: img-change;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    margin-left: 5rem;
+}
+
+.card .img__scroll p {
+    font-size: 18px;
+    letter-spacing: 10%;
+    font-weight: 600;
+    margin: 0 1rem;
+}
+
+.card .img__scroll .arrow-right {
+    transform: rotate(180deg);
+}
+
+.card .card__results {
+    grid-area: results;
+    background-color: #606060;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: -2.05rem;
+    margin-left: -2rem;
+    max-height: 43px;
+}
+
+.card .card__results .results__header {
+    color: #54EABD;
+    font-size: 24px;
+    font-weight: 400;
+    padding-right: 1rem;
+}
+
+/* -----ABOUT----- */
+
+.logo {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo .logo__img {
+    max-width: 70%;
+}
+
+.map .map__img {
+    max-width: 100%;
+}
+
+@media screen and (max-width:) {
+    
+}
 
 
 
