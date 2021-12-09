@@ -50,35 +50,6 @@ h1, h2, h3 {
     box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* -----LANDING----- */
-
-.landing__body {
-    width: 100vw;
-    height: 95vh;
-    margin: 0 auto;
-    background-color: #797777;
-}
-
-.landing__wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.landing__wrapper  .landing__logo{
-    margin-top: 5rem;
-    max-width: 80%;
-}
-
-.landing__button {
-    margin-top: 3rem;
-    font-size: 28px;
-    padding: 2rem 3rem;
-}
-
-/* -----HOME----- */
-
 /* HEADER */
 
 .menu {
@@ -92,6 +63,10 @@ h1, h2, h3 {
     box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.2);
     position: fixed;
     z-index: 1;
+}
+
+.menu .menu__hamburger {
+    display: none;
 }
 
 .menu .menu__nav {
@@ -154,6 +129,110 @@ h1, h2, h3 {
     font-size: 14px;
     font-weight: 600;
 }
+
+/* FOOTER */
+
+.footer {
+    background-color: #606060;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.footer .footer__logo img {
+    max-width: 70%;
+}
+
+.footer .footer__nav {
+    padding-top: 5rem;
+    margin-right: 5rem;
+}
+
+.footer .footer__nav .links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 80px;
+    grid-template-areas: 
+    "home press"
+    "about reviews"
+    "contact news";
+}
+
+.footer .footer__nav .links .links__home {
+    grid-area: home;
+}
+
+.footer .footer__nav .links .links__about {
+    grid-area: about;
+}
+
+.footer .footer__nav .links .links__contact {
+    grid-area: contact;
+}
+
+.footer .footer__nav .links .links__press {
+    grid-area: press;
+}
+
+.footer .footer__nav .links .links__reviews {
+    grid-area: reviews;
+}
+
+.footer .footer__nav .links .links__news {
+    grid-area: news;
+}
+
+.footer .footer__nav .links li a {
+    color: #54EABD;
+    font-size: 24px;
+    margin: 2rem;
+}
+
+.footer .footer__nav .social {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    gap: 3rem;
+}
+
+.footer .footer__nav .links li a:hover {
+    color: #d2fff1;
+    text-decoration: underline;
+    text-decoration-color: rgb(68, 68, 68);
+}
+
+/* -----LANDING----- */
+
+.landing__body {
+    width: 100vw;
+    height: 95vh;
+    margin: 0 auto;
+    background-color: #797777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.landing__wrapper  .landing__logo{
+    margin-top: 2rem;
+    max-width: 80%;
+}
+
+.landing__button {
+    margin-top: 3rem;
+    font-size: 28px;
+    padding: 2rem 3rem;
+}
+
+/* -----HOME----- */
 
 /* MAIN */
 
@@ -332,78 +411,6 @@ h1, h2, h3 {
     margin-bottom: 5rem;
 }
 
-/* FOOTER */
-
-.footer {
-    background-color: #606060;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 2rem;
-}
-
-.footer .footer__logo img {
-    max-width: 70%;
-}
-
-.footer .footer__nav {
-    padding-top: 5rem;
-    margin-right: 5rem;
-}
-
-.footer .footer__nav .links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 80px;
-    grid-template-areas: 
-    "home press"
-    "about reviews"
-    "contact news";
-}
-
-.footer .footer__nav .links .links__home {
-    grid-area: home;
-}
-
-.footer .footer__nav .links .links__about {
-    grid-area: about;
-}
-
-.footer .footer__nav .links .links__contact {
-    grid-area: contact;
-}
-
-.footer .footer__nav .links .links__press {
-    grid-area: press;
-}
-
-.footer .footer__nav .links .links__reviews {
-    grid-area: reviews;
-}
-
-.footer .footer__nav .links .links__news {
-    grid-area: news;
-}
-
-.footer .footer__nav .links li a {
-    color: #54EABD;
-    font-size: 24px;
-    margin: 2rem;
-}
-
-.footer .footer__nav .social {
-    display: flex;
-    justify-content: center;
-    margin: 2rem;
-    gap: 3rem;
-}
-
-.footer .footer__nav .links li a:hover {
-    color: #d2fff1;
-    text-decoration: underline;
-    text-decoration-color: rgb(68, 68, 68);
-}
-
 /* -----BOOKING----- */
 
 .booking__background img {
@@ -421,6 +428,7 @@ h1, h2, h3 {
     padding: 2rem 0;
     position: absolute;
     bottom: 45%;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .booking__form input, select {
@@ -446,6 +454,7 @@ h1, h2, h3 {
     padding-bottom: 0;
     background-color: #c4c4c4;
     width: 95%;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.2);
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: auto;
@@ -504,6 +513,7 @@ h1, h2, h3 {
     grid-area: img-change;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-bottom: 1rem;
     margin-left: 5rem;
 }
@@ -555,27 +565,21 @@ h1, h2, h3 {
 }
 
 @media screen and (max-width: 768px) {
+
+    /* -----GENERAL----- */
+
     p, a {
         font-size: 16px;
     }
 
-    .menu {
-        padding-left: 1rem;
-    }
+    /* HEADER */
 
-    .menu .menu__logo {
-        width: 70px;
+    .menu .menu__hamburger {
+        display: inline;
     }
 
     .menu .menu__nav {
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 1rem;
-    }
-
-    .menu .menu__nav li .menu__link {
-        margin-right: 1rem;
-        font-size: 16px;
+        display: none;
     }
     
     .menu .menu__search {
@@ -597,6 +601,24 @@ h1, h2, h3 {
         height: 15px;
         margin-right: 0.2rem;
     }
+
+    /* FOOTER */
+
+    .footer {
+        padding-left: 0;
+    }
+
+    .footer .footer__logo {
+        display: none;
+    }
+
+    .footer .footer__map {
+        display: none;
+    }
+
+    /* -----HOME----- */
+
+    /* MAIN */
     
     .hero__background {
         background-size: cover;
@@ -646,17 +668,7 @@ h1, h2, h3 {
         margin-bottom: 5rem;
     }
 
-    .footer {
-        padding-left: 0;
-    }
-
-    .footer .footer__logo {
-        display: none;
-    }
-
-    .footer .footer__map {
-        display: none;
-    }
+    /* -----BOOKING----- */
 
     .booking__background img {
         margin-bottom: 10rem; 
