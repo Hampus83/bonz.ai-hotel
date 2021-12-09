@@ -683,6 +683,7 @@ h1, h2, h3 {
     }
 
     .card {
+        margin-top: 4rem;
         margin-bottom: 5rem;
         padding: 2rem;
         padding-bottom: 0;
