@@ -53,17 +53,13 @@ h1, h2, h3 {
 /* -----LANDING----- */
 
 .body__landing {
-    max-width: 100%;
     width: 100vw;
     height: 95vh;
-    margin: 0;
+    margin: 0 auto;
     background-color: #797777;
 }
 
 .wrapper__landing {
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +123,6 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: absolute;
     right: 0;
     border-bottom-left-radius: 5px;
     box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.2);
@@ -288,6 +283,7 @@ h1, h2, h3 {
 }
 
 .gallery .gallery__img-small {
+    width: 100%;
     grid-area: img; 
 }
 
@@ -308,6 +304,7 @@ h1, h2, h3 {
 }
 
 .gallery img {
+    width: 100%;
     border: 3px solid #54EABD;
     border-radius: 5px;
     box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.2);
@@ -405,7 +402,8 @@ h1, h2, h3 {
 /* -----BOOKING----- */
 
 .booking__background img {
-    max-width: 100%;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 .booking__form {
@@ -417,7 +415,7 @@ h1, h2, h3 {
     gap: 3rem;
     padding: 2rem 0;
     position: absolute;
-    bottom: 250px;
+    bottom: 45%;
 }
 
 .booking__form input, select {
@@ -430,6 +428,7 @@ h1, h2, h3 {
 .booking__form .booking__button {
     padding: 0.3rem 3rem;
     display: flex;
+    align-items: center;
 }
 
 .booking__form .booking__button img {
@@ -555,24 +554,178 @@ h1, h2, h3 {
         font-size: 16px;
     }
 
+    .menu {
+        padding-left: 1rem;
+        /* right: 5px; */
+    }
+
     .menu .menu__logo {
-        width: 100px;
+        width: 70px;
     }
 
     .menu .menu__nav {
         display: flex;
         flex-wrap: wrap;
+        padding-left: 1rem;
     }
 
     .menu .menu__nav li .menu__link {
-        color: #54EABD;
         margin-right: 1rem;
         font-size: 16px;
     }
+    
     .menu .menu__search {
         display: none;
     }
+
+    .basket {
+        width: 60px;
+        height: 100px;
+        top: 99px;
+        /* right: 5px; */
+    }
     
+    .basket .basket__notice {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .hero__background {
+        background-size: cover;
+    }
+    
+    .hero__searchbox {
+        padding: 1rem 2rem;
+        left: 1.5rem;
+    }
+    
+    .hero__quote {
+        font-size: 36px;
+        top: 21rem;
+        left: 3rem;
+    }
+    
+    .hero__quoter {
+        font-size: 28px;
+        top: 28rem;
+    }
+    
+    .info__text {
+        width: 80%;
+    }
+    
+    .gallery__quote {
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .gallery .gallery__header {
+        margin-top: 5rem;
+        font-size: 38px;
+        font-weight: 500;
+    }
+    
+    .gallery hr {
+        width: 100%;
+        height: 2px;
+        background-color: #54EABD;
+        border: none;
+    }
+    
+    .gallery .gallery__text {
+        margin-bottom: 5rem;
+    }
+
+    .footer {
+        padding-left: 0;
+    }
+
+    .footer .footer__logo {
+        display: none;
+    }
+
+    .footer .footer__map {
+        display: none;
+    }
+
+    .booking__background img {
+        margin-bottom: 10rem; 
+    }
+    
+    .booking__form {
+        gap: 2rem;
+        flex-direction: column;
+        width: 80%;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+    }
+
+    .card {
+        margin-bottom: 5rem;
+        padding: 2rem;
+        padding-bottom: 0;
+        background-color: #c4c4c4;
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: auto;
+        grid-template-areas:
+        "header"
+        "img"
+        "img-change"
+        "info"
+        "features"
+        "price"
+        "results"
+        ;
+    }
+    
+    .card .card__header {
+       text-align: center;
+       margin-bottom: 1rem;
+    }
+
+    .card .card__img {
+        width: 100%;
+     }
+
+    .card .img__scroll {
+        padding-bottom: 0;
+        margin-left: 0;
+    }
+
+    .card .card__price {
+        margin-bottom: 2rem;
+    }
+    
+    .card .card__results .results__header {
+        font-size: 16px;
+    }
+
+    /* .body__landing {
+        max-width: 100%;
+        width: 100vw;
+        height: 95vh;
+        margin: 0;
+        background-color: #797777;
+    }
+    
+    .wrapper__landing {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .landing__button {
+        margin-top: 3rem;
+        font-size: 28px;
+        padding: 2rem 3rem;
+    } */
 
 }
 
